@@ -42,18 +42,16 @@ $query_prodi = mysqli_query(
 
     <title>Update Data Mahasiswa</title>
 
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet">
 
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body style="margin:0; min-height:100vh; background:#f1f5f9; font-family:'Segoe UI',sans-serif;">
 
-    <!-- Navbar -->
+
     <nav class="navbar navbar-dark shadow-sm"
          style="background:linear-gradient(135deg,#0f172a,#1d4ed8);">
 
@@ -73,14 +71,12 @@ $query_prodi = mysqli_query(
 
     </nav>
 
-    <!-- Konten -->
     <div class="container py-5">
 
         <div class="row justify-content-center">
 
             <div class="col-12 col-lg-8 col-xl-7">
 
-                <!-- Judul -->
                 <div class="mb-4 text-center">
 
                     <div class="d-flex align-items-center justify-content-center mx-auto mb-3"
@@ -100,7 +96,6 @@ $query_prodi = mysqli_query(
 
                 </div>
 
-                <!-- Card Form -->
                 <div class="card border-0 shadow-sm"
                      style="border-radius:20px; overflow:hidden;">
 
@@ -122,7 +117,6 @@ $query_prodi = mysqli_query(
 
                         <form action="proses_update.php" method="post">
 
-                            <!-- NIM -->
                             <div class="mb-4">
 
                                 <label class="form-label fw-semibold">
@@ -150,7 +144,6 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Nama -->
                             <div class="mb-4">
 
                                 <label for="nama" class="form-label fw-semibold">
@@ -177,7 +170,6 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Program Studi -->
                             <div class="mb-4">
 
                                 <label for="id_prodi" class="form-label fw-semibold">
@@ -217,7 +209,6 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Jenis Kelamin -->
                             <div class="mb-4">
 
                                 <label for="jenis_kelamin" class="form-label fw-semibold">
@@ -255,7 +246,6 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Alamat -->
                             <div class="mb-4">
 
                                 <label for="alamat" class="form-label fw-semibold">
@@ -281,13 +271,11 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Hidden NIM -->
                             <input
                                 type="hidden"
                                 name="nim"
                                 value="<?= htmlspecialchars($data['nim']) ?>">
 
-                            <!-- Keterangan -->
                             <div class="alert alert-info border-0 small"
                                  style="border-radius:10px;">
 
@@ -296,7 +284,6 @@ $query_prodi = mysqli_query(
 
                             </div>
 
-                            <!-- Tombol -->
                             <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
 
                                 <button
@@ -327,7 +314,6 @@ $query_prodi = mysqli_query(
 
                 </div>
 
-                <!-- Footer -->
                 <div class="text-center mt-4">
 
                     <p class="text-secondary small">
